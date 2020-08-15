@@ -6,5 +6,6 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - maven/test # checkout, build, test, and upload test results
-      - cobertura:cobertura
+      - maven/test cobertura:cobertura # checkout, build, test, and upload test results
+      
+      
